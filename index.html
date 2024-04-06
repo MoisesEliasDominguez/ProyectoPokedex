@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Pokédex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .pokedex-header {
+            text-align: center;
+            color: #cc0000;
+        }
+        .pokemon-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .pokemon {
+            background-color: #eee;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            width: calc(33.333% - 20px);
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .pokemon img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .pokemon-info {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="pokedex-header">Mi Pokédex</h1>
+        <ul class="pokemon-list">
+            <li class="pokemon">
+                <img src="Froakie.png" alt="Froakie">
+                <div class="pokemon-info">
+                    <h2>Froakie</h2>
+                    <p>#0656</p>
+                </div>
+            </li>
+            <li class="pokemon">
+                <img src="Frog.jpg" alt="Frogadier">
+                <div class="pokemon-info">
+                    <h2>Frogadier</h2>
+                    <p>#0657</p>
+                </div>
+            </li>
+            <li class="pokemon">
+                <img src="Gre.png" alt="Greninja">
+                <div class="pokemon-info">
+                    <h2>Greninja</h2>
+                    <p>#0658</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
